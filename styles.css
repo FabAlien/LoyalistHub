@@ -26,6 +26,7 @@ header {
   background-color: var(--secondaryColour);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 nav {
@@ -37,17 +38,29 @@ nav {
   overflow: hidden;
   top: 0;
   width: 100%;
-  z-index: 999;
 }
 
 .navbar a {
   float: left;
-  display: block;
+  display: flex;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  z-index: 999;
+}
+
+.navbar i {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.navbar p {
+  text-align: start;
+  margin: 0;
 }
 
 .navbar a:hover {
@@ -64,18 +77,73 @@ nav {
   display: none;
 }
 
-main {
-  min-height: 100vh;
+#homeNav {
+  width: 10vw;
 }
 
-section {
-  margin-top: 10vh;
+main {
+  min-height: 200vh;
+  display: flex;
+  flex-direction: row;
+  color: var(--tertiaryColour);
+}
+
+#articleList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10vh;
+  background-color: var(--secondaryColour);
+  width: 10vw;
+  position: fixed;
+  height: 100%;
+}
+
+#articleList h2 {
+  padding-left: 1vw;
+}
+
+#articleList ul {
+  padding-top: 0;
+  padding-left: 2vw;
+  margin: 0;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#articleList a {
+  text-decoration: none;
+  color: white;
+}
+
+#articleList a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#articleViewer {
+  margin-left: 10vw;
+  padding-top: 10vh;
+  width: 90vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--secondaryColour);
+  color: var(--tertiaryColour);
+  height: 10vh;
+}
+
+footer a {
+  color: lightblue;
 }
 
 footer > p {
@@ -91,6 +159,9 @@ footer > p {
   .navbar a.icon {
     float: right;
     display: block;
+  }
+  .mobileTitle {
+    display: none;
   }
 }
 

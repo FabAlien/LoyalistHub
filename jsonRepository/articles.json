@@ -1,0 +1,34 @@
+{
+    "articles": [
+        {
+            "header":"Article 1", 
+            "para1":"Lorem 1", 
+            "para2":"Lorem 1", 
+            "para3":"Lorem 1"
+        },
+        {
+            "header":"Article 2", 
+            "para1":"Lorem 2", 
+            "para2":"Lorem 2", 
+            "para3":"Lorem 2"
+        },
+        {
+            "header":"Article 3", 
+            "para1":"Lorem 3", 
+            "para2":"Lorem 3", 
+            "para3":"Lorem 3"
+        },
+        {
+            "header":"Article 4", 
+            "para1":"Lorem 4", 
+            "para2":"Lorem 4", 
+            "para3":"Lorem 4"
+        },
+        {
+            "header":"Article 5", 
+            "para1":"Lorem 5", 
+            "para2":"Lorem 5", 
+            "para3":"Lorem 5"
+        }
+    ]
+}
