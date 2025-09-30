@@ -1,0 +1,111 @@
+/* Variables */
+
+* {
+  --primaryColour: #c78354;
+  --secondaryColour: #333;
+  --tertiaryColour: #ddd;
+}
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono';
+}
+
+body {
+  margin: 0;
+  background-color: #6d6d6d;
+}
+
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondaryColour);
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar {
+  background-color: var(--secondaryColour);
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: var(--tertiaryColour);
+  color: black;
+}
+
+.navbar a.active {
+  background: var(--primaryColour);
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  margin-top: 10vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > p {
+  margin: 5px 0;
+}
+
+/* non-Global */
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
