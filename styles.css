@@ -15,7 +15,20 @@
 
 body {
   margin: 0;
-  background-color: var(--tertiaryColour);
+  background:linear-gradient(135deg,#0a0a0f 0%,#12121a 50%,#0a0a0f 100%);
+}
+
+#particleContainer {
+  position: fixed;
+  background-size: cover;
+	background-position: center center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
 }
 
 header {
@@ -95,6 +108,7 @@ main {
   row-gap: 2vw;
   justify-content: space-evenly;
   width: 100%;
+  z-index: 500;
 }
 
 .cardContainer {
@@ -102,7 +116,7 @@ main {
   flex-direction: column;
   width: 18vw;
   height: 60vh;
-  border: solid 2px var(--secondaryColour);
+  border: solid 2px var(--tertiaryColour);
 }
 
 .cardImage {
@@ -115,13 +129,14 @@ main {
   justify-content: space-evenly;
   align-items: center;
   height: 25%;
-  border-top: solid 2px var(--secondaryColour);
+  color: var(--tertiaryColour);
+  border-top: solid 2px var(--tertiaryColour);
   margin: 0;
 
 }
 
 .cardText h2 {
-  border-bottom: solid 2px var(--secondaryColour);
+  border-bottom: solid 2px var(--tertiaryColour);
   margin: 0;
   width: 75%;
   text-align: center;
@@ -132,8 +147,9 @@ main {
   text-align: center;
 }
 
-.cardContainer:hover {
+.cardContainer:hover, .cardContainer:hover .cardText, .cardContainer:hover .cardText h2, .cardContainer:hover .cardText p {
   border-color: var(--primaryColour);
+  color: var(--primaryColour);
 }
 
 footer {
