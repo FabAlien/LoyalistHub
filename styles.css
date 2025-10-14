@@ -76,11 +76,7 @@ nav {
   display: none;
 }
 
-#homeNav {
-  width: 10vw;
-}
-
-main {
+#indexMain {
   display: flex;
   flex-direction: column;
   color: var(--secondaryColour);
@@ -104,10 +100,15 @@ main {
 
 .parallaxWelcome p {
   width: 60%;
+  margin: 0;
+}
+
+#warhammerLogo {
+  width: 60%;
 }
 
 .parallaxBuffer {
-  background:linear-gradient(135deg,#0a0a0f 0%,#12121a 50%,#0a0a0f 100%);
+  background:var(--secondaryColour);
   width: 100%;
   min-height: 60vh;
   color: var(--tertiaryColour);
@@ -130,7 +131,7 @@ main {
   width: 100%;
   z-index: 500;
   padding: 6rem 0;
-  background-image: url(Space\ Wolves.jpg);
+  background-image: url(Warp.png);
   font-size: 1rem;
   text-shadow: none;
 }
@@ -146,7 +147,7 @@ main {
 
 .cardImage {
   height: 75%;
-  background-color: var(--tertiaryColour);
+  background-color: var(--secondaryColour);
 }
 
 .cardText {
@@ -158,6 +159,7 @@ main {
   color: var(--tertiaryColour);
   border-top: solid 2px var(--tertiaryColour);
   margin: 0;
+  background-color: var(--secondaryColour);
 
 }
 
@@ -177,6 +179,11 @@ main {
   border-color: var(--primaryColour);
   color: var(--primaryColour);
   cursor: pointer;
+}
+
+.backgroundTint {
+  background-color: rgb(51, 51, 51, 0.5);
+  background-blend-mode: multiply;
 }
 
 footer {

@@ -1,0 +1,59 @@
+/* Variables */
+
+* {
+    --primaryColour: #c78354;
+    --secondaryColour: #333;
+    --tertiaryColour: #ddd;
+}
+  
+/* Global */
+
+.wikiOverview {
+    display: flex;
+    min-height: 60vh;
+    margin: 1vw;
+    margin-top: 10vh;
+    justify-content: space-between;
+}
+
+.wikiIntro {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.wikiBoxSection {
+    width: 30%;
+    text-align: center;
+}
+
+.wikiBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--tertiaryColour);
+    border: 2px solid black;
+}
+
+.wikiBoxImage {
+
+}
+
+.wikiBoxInfo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.wikiBoxInfoBold {
+    font-weight: bold;
+}
+
+.wikiContent {
+    min-height: 100vh;
+}
