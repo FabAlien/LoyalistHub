@@ -8,6 +8,10 @@
   
 /* Global */
 
+a {
+    text-decoration: none;
+}
+
 .wikiOverview {
     display: flex;
     min-height: 60vh;
@@ -67,4 +71,27 @@
 
 .wikiContent {
     min-height: 100vh;
+}
+
+.contentSection {
+    min-height: 60vh;
+    margin: 1vw;
+}
+
+.cardOverview {
+    background-image: none;
+}
+
+.cardContainer {
+    border: solid 2px var(--secondaryColour);
+}
+
+.cardImage {
+    background-color: white;
+}
+
+.cardText {
+    background-color: white;
+    border-top: solid 2px var(--secondaryColour);
+    color: var(--secondaryColour);
 }
