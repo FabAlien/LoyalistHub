@@ -24,6 +24,19 @@
     </header>
 
     <main id="indexMain">
+
+      <div id="extendContainer">
+        <div id="cardExtend">
+          <section id="extendText">
+            <a href="Wiki Pages/Wiki Template.html" id="extendAnchor"><h2 id="extendH2">Dark Angels</h2></a>
+            <p id="extendP1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet?</p>
+            <p id="extendP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis maiores a. Pariatur, doloremque, illum eius voluptatum et voluptates, delectus ipsa deserunt cum sunt ipsam quasi temporibus nulla molestiae! Error.</p>
+
+          </section>
+          <div class="extendExit" onclick="hideInfo()"><h2>X</h2></div>
+        </div>
+      </div>
+
       <section class="parallaxWelcome backgroundTint">
         <img id="warhammerLogo" src="warhammer Logo.png" alt="Warhammer Logo">
         <p>Forget the promise of progress and understanding, for in the grim darkness of the far future there is only war. There is no peace amongst the stars, only an eternity of carnage and slaughter, and the laughter of thirsting gods.</p>
@@ -31,21 +44,22 @@
 
       <section class="parallaxBuffer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet qui error at id minus ducimus? Ad hic eum, blanditiis maiores non aliquam, reiciendis quasi alias laudantium laborum necessitatibus quisquam tempora suscipit. Enim, hic commodi. Ipsam facilis velit consequatur debitis.</p>
+        <button onclick="extendInfo()">Open Info</button>
+
       </section>
 
       <section class="parallaxWelcome cardOverview backgroundTint">
-        <a href="Wiki Pages/Wiki Template.html">
-          <div class="cardContainer">
-            <div class="cardImage">
-              <img src="" alt="">
-            </div>
 
-            <div class="cardText">
-              <h2>I</h2>
-              <p>Dark Angels</p>
-            </div>
+        <div class="cardContainer" onclick="extendInfo()">
+          <div class="cardImage">
+            <img src="" alt="">
           </div>
-        </a>
+
+          <div class="cardText">
+            <h2>I</h2>
+            <p>Dark Angels</p>
+          </div>
+        </div>
 
         <div class="cardContainer">
           <div class="cardImage">
