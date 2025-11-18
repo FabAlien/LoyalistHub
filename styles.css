@@ -104,6 +104,7 @@ nav {
   background-color: var(--tertiaryColour);
   border: solid 2px var(--secondaryColour);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -118,12 +119,44 @@ nav {
   width: 20%;
 }
 
-#extendH2 {
-
+#buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#extendText p {
+#buttonContainer a {
+  text-decoration: none;
+}
 
+.extendButton {
+  width: 30vw;
+  height: 10vh;
+  background-color: var(--tertiaryColour);
+  border-radius: 1em;
+}
+
+#buttonMore {
+  border: 2px solid blue;
+  color: blue;
+  text-align: center;
+}
+
+#buttonMore:hover {
+  color: var(--tertiaryColour);
+  background-color: blue;
+  cursor: pointer;
+}
+
+#buttonExit {
+  border: 2px solid red;
+  color: red;
+  text-align: center;
+}
+
+#buttonExit:hover {
+  color: var(--tertiaryColour);
+  background-color: red;
+  cursor: pointer;
 }
 
 .parallaxWelcome {

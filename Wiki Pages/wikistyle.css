@@ -39,10 +39,6 @@ a {
     border: 2px solid black;
 }
 
-.wikiBoxImage {
-
-}
-
 .wikiBoxInfo {
     display: flex;
     flex-direction: column;
