@@ -28,23 +28,21 @@
       <div id="extendContainer">
         <div id="cardExtend">
           <section id="extendText">
-            <h2>Dark Angels</h2>
-            <p id="extendP1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet?</p>
-            <p id="extendP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis maiores a. Pariatur, doloremque, illum eius voluptatum et voluptates, delectus ipsa deserunt cum sunt ipsam quasi temporibus nulla molestiae! Error.</p>
-
+            <h2 id="articleHeader">Dark Angels</h2>
+            <p id="articleParagraph0"></p>
+            <p id="articleParagraph1"></p>
+            <p id="articleParagraph2"></p>
           </section>
-          
+      
           <div id="buttonContainer">
             <a href="Wiki Pages/Wiki Template.html">
               <div class="extendButton" id="buttonMore">
                 <h2>Read More</h2>
               </div>
             </a>
-
-            <div class="extendButton" id="buttonExit" onclick="hideInfo()">
+            <div class="extendButton" id="buttonExit" id="buttonExit">
               <h2>Exit Popup</h2>
             </div>
-
           </div>
         </div>
       </div>
@@ -60,7 +58,8 @@
 
       <section class="parallaxWelcome cardOverview backgroundTint">
 
-        <div class="cardContainer" onclick="extendInfo()">
+        <div class="cardContainer" data-index="0">
+
           <div class="cardImage">
             <img src="" alt="">
           </div>
@@ -70,8 +69,9 @@
             <p>Dark Angels</p>
           </div>
         </div>
+      
+        <div class="cardContainer" data-index="1">
 
-        <div class="cardContainer">
           <div class="cardImage">
             <img src="" alt="">
           </div>
