@@ -17,13 +17,14 @@ a {
     min-height: 60vh;
     margin: 1vw;
     margin-top: 10vh;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10vw;
 }
 
 .wikiIntro {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 45%;
 }
 
 .wikiBoxSection {
@@ -67,11 +68,25 @@ a {
 
 .wikiContent {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contentSection {
-    min-height: 60vh;
+    min-height: 40vh;
     margin: 1vw;
+    width: 45vw;
+}
+
+.contentSection h2 {
+    text-align: center;
+}
+
+.cardSection {
+    width: 100%;
+    text-align: center;
 }
 
 .cardOverview {
