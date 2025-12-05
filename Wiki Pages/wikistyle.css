@@ -38,6 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 45%;
+    line-height: 1.5;
 }
 
 .wikiBoxSection {
@@ -95,6 +96,10 @@ main {
 
 .contentSection h2 {
     text-align: center;
+}
+
+.contentSection p {
+    line-height: 1.5;
 }
 
 .cardSection {
