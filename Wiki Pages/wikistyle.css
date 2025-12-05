@@ -12,6 +12,19 @@ a {
     text-decoration: none;
 }
 
+main {
+    min-height: 90vh;
+}
+
+#articleList {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .wikiOverview {
     display: flex;
     min-height: 60vh;
