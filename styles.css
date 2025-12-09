@@ -4,6 +4,25 @@
   --primaryColour: #c78354;
   --secondaryColour: #333;
   --tertiaryColour: #ddd;
+
+  --legionDA: #00401E;
+  --legionEC: #91305D;
+  --legionIW: #94999D;
+  --legionWS: #C7E0DA;
+  --legionSW: #709CB7;
+  --legionIF: #FFDB01;
+  --legionNL: #002051;
+  --legionBA: #991115;
+  --legionIH: #333;
+  --legionWE: #6A0002;
+  --legionUM: #4273B8;
+  --legionDG: #849B63;
+  --legionTS: #18ABCC;
+  --legionBL: #333;
+  --legionWB: #581011;
+  --legionSM: #52B246;
+  --legionRG: #333;
+  --legionAL: #018675;
 }
 
 /* Global */
@@ -258,6 +277,96 @@ nav {
 .cardText p {
   margin: 0;
   text-align: center;
+}
+
+#legionDA div {
+  background-color: var(--legionDA);
+  color: var(--tertiaryColour);
+}
+
+#legionEC div {
+  background-color: var(--legionEC);
+  color: var(--tertiaryColour);
+}
+
+#legionIW div {
+  background-color: var(--legionIW);
+  color: var(--secondaryColour);
+}
+
+#legionWS div {
+  background-color: var(--legionWS);
+  color: var(--secondaryColour);
+}
+
+#legionSW div {
+  background-color: var(--legionSW);
+  color: var(--secondaryColour);
+}
+
+#legionIF div {
+  background-color: var(--legionIF);
+  color: var(--secondaryColour);
+}
+
+#legionNL div {
+  background-color: var(--legionNL);
+  color: var(--tertiaryColour);
+}
+
+#legionBA div {
+  background-color: var(--legionBA);
+  color: var(--tertiaryColour);
+}
+
+#legionIH div {
+  background-color: var(--legionIH);
+  color: var(--tertiaryColour);
+}
+
+#legionWE div {
+  background-color: var(--legionWE);
+  color: var(--tertiaryColour);
+}
+
+#legionUM div {
+  background-color: var(--legionUM);
+  color: var(--secondaryColour);
+}
+
+#legionDG div {
+  background-color: var(--legionDG);
+  color: var(--secondaryColour);
+}
+
+#legionTS div {
+  background-color: var(--legionTS);
+  color: var(--secondaryColour);
+}
+
+#legionBL div {
+  background-color: var(--legionBL);
+  color: var(--tertiaryColour);
+}
+
+#legionWB div {
+  background-color: var(--legionWB);
+  color: var(--tertiaryColour);
+}
+
+#legionSM div {
+  background-color: var(--legionSM);
+  color: var(--secondaryColour);
+}
+
+#legionRG div {
+  background-color: var(--legionRG);
+  color: var(--tertiaryColour);
+}
+
+#legionAL div {
+  background-color: var(--legionAL);
+  color: var(--tertiaryColour);
 }
 
 .cardContainer:hover, .cardContainer:hover .cardText, .cardContainer:hover .cardText h2, .cardContainer:hover .cardText p {
